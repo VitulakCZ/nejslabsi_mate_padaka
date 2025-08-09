@@ -1,0 +1,65 @@
+body {
+    background-color: green;
+    user-select: none;
+}
+
+.hlavni {
+    display: flex;
+    height: 50rem;
+}
+
+.retez {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 350px;
+}
+
+.retez div, .tlacitka div, .timer {
+    display: flex;
+    width: 250px;
+    height: 75px;
+    background-color: blue;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+#a0 {
+    background-color: red;
+}
+
+.bank {
+    margin-top: 2.5rem;
+}
+
+.tlacitka {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.tlacitka div:hover {
+    cursor: pointer;
+}
+
+.tlacitka .spravne {
+    background-color: lime;
+}
+
+.tlacitka .spatne {
+    background-color: rgb(250, 20, 100);
+}
+
+.tlacitka .bank-tlacitko {
+    background-color: lightblue;
+}
+
+.timer {
+    position: absolute;
+    height: 61.6px;
+    top: 46.7rem;
+    right: 8px;
+}
