@@ -1,3 +1,6 @@
+const menu            = document.querySelector(".menu");
+const menuTlacitko    = document.querySelector(".menu-tlacitko");
+const hra             = document.querySelector(".hra");
 const spravneTlacitko = document.querySelector(".spravne");
 const spatneTlacitko  = document.querySelector(".spatne");
 const bankTlacitko    = document.querySelector(".bank-tlacitko");
@@ -31,9 +34,14 @@ function countdown(minutes, seconds) {
     tick();
 }
 
-countdown(3, 00);
 var audio = new Audio("Nejslabší máte padáka.mp3");
-audio.play();
+
+menuTlacitko.addEventListener('click', () => {
+    menu.style.display = "none";
+    hra.style.display = "block";
+    audio.play();
+    countdown(3, 00);
+});
 
 var level = 0;
 spravneTlacitko.addEventListener("click", () => {

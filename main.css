@@ -3,6 +3,43 @@ body {
     user-select: none;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+    color: #1000EF;
+}
+
+.menu-tlacitko {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70rem;
+    height: 20rem;
+    background: #9F0000;
+    font-size: 5rem;
+    text-align: center;
+    z-index: -1;
+}
+
+.menu-tlacitko:hover {
+    cursor: pointer;
+}
+
+.menu-obrazek {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+.hra {
+    display: none;
+}
+
 .hlavni {
     display: flex;
     height: 50rem;
